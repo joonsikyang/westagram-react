@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!--nav-->
+    <div id="nav">
+        <div class="nav-items-container">
+            <div class="nav-left-items">
+                <img id="nav-logo" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png" alt="logo">
+                <div id="nav-logo-line"></div>
+                <img id="nav-text-logo" src="img/logo_text.png" alt="text-logo">
+            </div>
+            <div id="search-container">
+                <!-- <div class="search-default-img-text-container"> -->
+                <!-- <div class="search-default-img">
+                        <img width="10px" height="10px" src="img/search-icon.png" alt="search-default-icon">
+                    </div> -->
+                <input id="search-input" type="text" placeholder="Search" onkeyup="myFunction()">
+                <ul id="search-ul">
+                    <li>Adele</li>
+                    <li>Agnes</li>
+                    <li>Billy</li>
+                    <li>Bob</li>
+                    <li>Calvin</li>
+                    <li>Christina</li>
+                    <li>Cindy</li>
+                </ul>
+
+                <!-- </div> -->
+            </div>
+
+            <!--hidden-search-container-->
+            <!-- <div id="hidden-search-container">
+                <div class="hidden-search-img">
+                    <img width="10px" height="10px" src="img/search-icon.png" alt="search-default-icon">
+                </div>
+                <div class="hidden-search-input-container">
+                    <input class="hidden-search-input" type="text" placeholder="검색">
+                </div>
+                <div class="hidden-search-delete">
+                    <img class="hidden-search-delete-img" width="15px" height="15px" src="img/delete-icon.png" alt="delete">
+                </div>
+            </div> -->
+
+            <div class="nav-right-items">
+                <div class="nav-right-item">
+                    <img id="nav-search" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="search">
+                </div>
+                <div class="nav-right-item">
+                    <img id="nav-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="heart">
+                </div>
+                <div class="nav-right-item">
+                    <img id="nav-profile" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="profile">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--media query-->
+    <div class="hidden-story">
+        <div class="hidden-story-item-container">
+            <div class="hidden-story-item">
+                <div class="hidden-story-item-img-container">
+                    <img class="hidden-story-item-img" src="https://scontent-gmp1-1.cdninstagram.com/vp/4cd1fb57fd26a6df98fb11c25e153cee/5E33869F/t51.2885-19/s150x150/37716008_294656411089478_6120038744205557760_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com" alt="profile_img">
+                </div>
+                <div class="hidden-story-item-username">jparkitrighthere</div>
+            </div>
+            <div class="hidden-story-item">
+                <div class="hidden-story-item-img-container">
+                    <img class="hidden-story-item-img" src="https://scontent-gmp1-1.cdninstagram.com/vp/fa2f2d744d86f050bd0c800ae713019e/5E19BFE0/t51.2885-19/s320x320/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com" alt="profile_img">
+                </div>
+                <div class="hidden-story-item-username">wecode_bootcamp</div>
+            </div>
+            <div class="hidden-story-item">
+                <div class="hidden-story-item-img-container">
+                    <img class="hidden-story-item-img" src="https://scontent-gmp1-1.cdninstagram.com/vp/9708d585e6f3ae65a94dd8387e0f6e68/5E260E92/t51.2885-19/s320x320/66799008_729185920860882_2353769179175190528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com" alt="profile_img">
+                </div>
+                <div class="hidden-story-item-username">meng.jini</div>
+            </div>
+        </div>
+    </div>
+    <!--main-->
+    <div id="main">
+        <div id="main-container">
+            <!--feeds-->
+            <div class="feeds">
+                <div class="feed-container">
+                    <div class="feed-top">
+                        <div>
+                            <img class="feed-top-profile-img" src="https://scontent-gmp1-1.cdninstagram.com/vp/e7643153cf33ecccd35735f3f5737541/5E1727F7/t51.2885-19/s150x150/38502238_2023435627722875_8237163518952996864_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com" alt="profile-img">
+                        </div>
+                        <div class="feed-top-id-dots">
+                            <div class="feed-top-id">joonsikyang</div>
+                            <div class="feed-top-dots">
+                                <img class="feed-top-dots-icon" src="https://icon-library.net/images/3-dots-icon/3-dots-icon-24.jpg" alt="option">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed-img">
+                        <img width="612px" height="409.33px" src="https://joonsikyang.files.wordpress.com/2019/10/domore.jpeg?w=825&h=510&crop=1" alt="main-image">
+                    </div>
+                    <div class="feed-bottom">
+                        <div class="feed-button-container">
+                            <div class="feed-button-left-container">
+                                <div class="feed-button-left">
+                                    <img class="feed-button-icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="like">
+                                </div>
+                                <div class="feed-button-left">
+                                    <img class="feed-button-icon" src="https://cdn3.iconfinder.com/data/icons/basic-user-interface-application/32/INSTAGRAM_ICON_SETS-06-512.png" alt="comment">
+                                </div>
+                                <div class="feed-button-left">
+                                    <img class="feed-button-icon" src="https://cdn3.iconfinder.com/data/icons/basic-user-interface-application/32/INSTAGRAM_ICON_SETS-21-512.png" alt="share">
+                                </div>
+                            </div>
+                            <div class="feed-button-right">
+                                <img id="feed-save-button" class="feed-button-icon" src="https://cdn3.iconfinder.com/data/icons/basic-user-interface-application/32/INSTAGRAM_ICON_SETS-07-512.png" alt="save">
+                            </div>
+                        </div>
+                        <div class="likes-count">
+                            <span>좋아요 4,390개</span>
+                        </div>
+                        <div class="feed-content-container">
+                            <span class="feed-content-id">joonsikyang</span>
+                            <span class="feed-content">그냥 있는("exist") 사람이 아니라 존재하는("present")사람이 돼라. 있는 사람과 존재하는 사람은 완전히 다르다. 그냥 있는 사람은 주변에 아무런 영향을 주지 못한다. 반면 존재하는 사람은 주변에 영향을 주면서 상호작용을 한다. - <미래의 교육, 올린></span>
+                        </div>
+                        <div class="comments-count-seeAll">
+                            댓글 230개 모두 보기
+                        </div>
+                        <div id="comments-container">
+                            <!--comment area-->
+                        </div>
+                        <div class="uploadTime">
+                            <span>48분 전</span>
+                        </div>
+                        <div class="comment-input-container">
+                            <div>
+                                <textarea id="comment-input" placeholder="댓글 달기..."></textarea>
+                            </div>
+                            <div>
+                                <button id="comment-submmit-button" type="submit">게시</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--main-right-->
+            <div id="main-right">
+                <div id="main-right-profile">
+                    <div id="main-right-profile-img-container">
+                        <img id="main-right-profile-img" src="https://scontent-gmp1-1.cdninstagram.com/vp/e7643153cf33ecccd35735f3f5737541/5E1727F7/t51.2885-19/s150x150/38502238_2023435627722875_8237163518952996864_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com" alt="profile_img">
+                    </div>
+                    <div id="main-right-name-container">
+                        <div id="main-right-username">joonsikyang</div>
+                        <div id="main-right-name">양준식 Joon Sik Yang</div>
+                    </div>
+                </div>
+                <div id="main-right-story-box">
+                    <div class="main-right-box-top">
+                        <div class="main-right-box-title">스토리</div>
+                        <div class="main-right-box-seeAll">모두보기</div>
+                    </div>
+                    <div class="main-right-story-item">
+                        <div class="main-right-story-item-img-container">
+                            <img class="main-right-story-item-img" src="https://scontent-gmp1-1.cdninstagram.com/vp/4cd1fb57fd26a6df98fb11c25e153cee/5E33869F/t51.2885-19/s150x150/37716008_294656411089478_6120038744205557760_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com" alt="profile_img">
+                        </div>
+                        <div class="main-right-story-item-username-time-container">
+                            <div class="main-right-story-item-username">jparkitrighthere</div>
+                            <div class="main-right-story-item-time">8시간 전</div>
+                        </div>
+                    </div>
+                    <div class="main-right-story-item">
+                        <div class="main-right-story-item-img-container">
+                            <img class="main-right-story-item-img" src="https://scontent-gmp1-1.cdninstagram.com/vp/fa2f2d744d86f050bd0c800ae713019e/5E19BFE0/t51.2885-19/s320x320/64219646_866712363683753_7365878438877462528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com" alt="profile_img">
+                        </div>
+                        <div class="main-right-story-item-username-time-container">
+                            <div class="main-right-story-item-username">wecode_bootcamp</div>
+                            <div class="main-right-story-item-time">4시간 전</div>
+                        </div>
+                    </div>
+                    <div class="main-right-story-item">
+                        <div class="main-right-story-item-img-container">
+                            <img class="main-right-story-item-img" src="https://scontent-gmp1-1.cdninstagram.com/vp/9708d585e6f3ae65a94dd8387e0f6e68/5E260E92/t51.2885-19/s320x320/66799008_729185920860882_2353769179175190528_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com" alt="profile_img">
+                        </div>
+                        <div class="main-right-story-item-username-time-container">
+                            <div class="main-right-story-item-username">meng.jini</div>
+                            <div class="main-right-story-item-time">1분 전</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main-right-recommendation-box">
+                    <div class="main-right-box-top">
+                        <div class="main-right-box-title">회원님을 위한 추천</div>
+                        <div class="main-right-box-seeAll">모두보기</div>
+                    </div>
+                    <div class="main-right-recommendation-item">
+                        <div class="main-right-recommendation-profile-img-container">
+                            <img class="main-right-recommendation-profile-img" src="https://scontent-gmp1-1.cdninstagram.com/vp/e7643153cf33ecccd35735f3f5737541/5E1727F7/t51.2885-19/s150x150/38502238_2023435627722875_8237163518952996864_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com"
+                                alt="profile_img">
+                        </div>
+                        <div class="main-right-recommendation-name-else-follow-container">
+                            <div>
+                                <div class="main-right-recommendation-name">joonsikyang</div>
+                                <div class="main-right-recommendation-else">meng.jini님 외 1명이 팔로우합니다</div>
+                            </div>
+                            <div class="main-right-recommendation-follow">팔로우</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main-right-aboutInstagram">
+                    <ul id="main-right-aboutInstagram-list">
+                        <li class="aboutInstagram-list-items">
+                            <span>
+                                    Instagram 정보
+                                </span>
+                        </li>
+                        <li class="aboutInstagram-list-items">
+                            <span>
+                                    지원
+                                </span>
+                        </li>
+                        <li class="aboutInstagram-list-items">
+                            <span>
+                                    홍보 센터
+                                </span>
+                        </li>
+                        <li class="aboutInstagram-list-items">
+                            <span>
+                                    API
+                                </span>
+                        </li>
+                        <li class="aboutInstagram-list-items">
+                            <span>
+                                    채용 정보
+                                </span>
+                        </li>
+                        <li class="aboutInstagram-list-items">
+                            <span>
+                                    개인정보처리방침
+                                </span>
+                        </li>
+                        <li class="aboutInstagram-list-items">
+                            <span>
+                                    약관
+                                </span>
+                        </li>
+                        <li class="aboutInstagram-list-items">
+                            <span>
+                                    디렉터리
+                                </span>
+                        </li>
+                        <li class="aboutInstagram-list-items">
+                            <span>
+                                    프로필
+                                </span>
+                        </li>
+                        <li class="aboutInstagram-list-items">
+                            <span>
+                                    해시태그
+                                </span>
+                        </li>
+                        <li class="aboutInstagram-list-items">
+                            <span>
+                                    언어
+                                </span>
+                        </li>
+                    </ul>
+                    <div id="copyright">© 2019 INSTAGRAM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
