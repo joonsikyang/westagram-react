@@ -4,8 +4,8 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Login from './pages/LoginPage/Login';
-import Main from './pages/MainPage/Main';
+import Login from './pages/Login/Login';
+import Main from './pages/Main/Main';
 
 class Routes extends React.Component {
   render() {

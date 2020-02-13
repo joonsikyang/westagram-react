@@ -1,0 +1,215 @@
+#main-right {
+  width: 293px;
+  margin-left: 28px;
+  #main-right-profile {
+    width: 293px;
+    height: 62px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    #main-right-profile-img-container {
+      width: 60px;
+      height: 60px;
+      align-items: center;
+      position: relative;
+      #main-right-profile-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        top: 50%;
+        margin-top: -25px;
+      }
+    }
+    #main-right-name-container {
+      margin-left: 14px;
+      padding: 12px 0px;
+      #main-right-username {
+        font-size: 14px;
+        color: #262626;
+        font-weight: 600;
+        line-height: 18px;
+        margin-bottom: 2px;
+      }
+      #main-right-name {
+        font-size: 12px;
+        line-height: 14px;
+        color: #999;
+      }
+    }
+  }
+  #main-right-story-box {
+    width: 293px;
+    height: 223px;
+    margin: 4px 0px 0px;
+    background-color: #ffffff;
+    border: 1px solid rgb(230, 230, 230);
+    .main-right-box-top {
+      margin: 12px 0px 0px;
+      padding: 4px 16px;
+      width: 291px;
+      height: 19px;
+      display: flex;
+      .main-right-box-title {
+        margin-right: auto;
+        color: #999999;
+        font-size: 14px;
+        line-height: 18px;
+        margin: -3px 0 -4px;
+        font-weight: 500;
+      }
+      .main-right-box-seeAll {
+        margin-left: auto;
+        color: #262626;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+    .main-right-story-item {
+      display: flex;
+      width: 275.02px;
+      height: 52px;
+      margin-left: auto;
+      padding: 4px 0px;
+      .main-right-story-item-img-container {
+        width: 44px;
+        height: 44px;
+        position: relative;
+        margin: 0;
+        border-radius: 50%;
+        background: linear-gradient(
+          45deg,
+          #f09433 0%,
+          #e6683c 25%,
+          #dc2743 50%,
+          #cc2366 75%,
+          #bc1888 100%
+        );
+        .main-right-story-item-img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid #ffffff;
+          position: absolute;
+          left: 50%;
+          margin-left: -20px;
+          top: 50%;
+          margin-top: -20px;
+        }
+      }
+      .main-right-story-item-username-time-container {
+        width: 215.04px;
+        height: 33.77px;
+        margin: 5px 0px 5px 14px;
+        padding: 1.9px 0px;
+        .main-right-story-item-username {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 18px;
+          margin-bottom: 2px;
+        }
+        .main-right-story-item-time {
+          font-size: 10px;
+          line-height: 12px;
+          color: #999;
+        }
+      }
+    }
+  }
+  #main-right-recommendation-box {
+    width: 293px;
+    height: 197px;
+    margin: 12px 0px;
+    background-color: #ffffff;
+    border-color: #efefef;
+    border: 1px solid rgb(230, 230, 230);
+    .main-right-recommendation-item {
+      display: flex;
+      width: 275.02px;
+      height: 52px;
+      margin-left: auto;
+      padding: 4px 0px;
+      .main-right-recommendation-profile-img-container {
+        width: 44px;
+        height: 44px;
+        position: relative;
+        margin: 0;
+        .main-right-recommendation-profile-img {
+          width: 34px;
+          height: 34px;
+          border-radius: 17px;
+          border: 1px solid rgba(0, 0, 0, 0.0975);
+          position: absolute;
+          left: 50%;
+          margin-left: -17px;
+          top: 50%;
+          margin-top: -17px;
+        }
+      }
+      .main-right-recommendation-name-else-follow-container {
+        width: 215.04px;
+        height: 33.77px;
+        margin: 5px 16px 5px 14px;
+        padding: 1.9px 0px;
+        display: flex;
+        .main-right-recommendation-name {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 18px;
+          margin-bottom: 2px;
+        }
+        .main-right-recommendation-else {
+          font-size: 12px;
+          line-height: 12px;
+          color: #999;
+        }
+        .main-right-recommendation-follow {
+          font-size: 12px;
+          font-weight: 600;
+          text-align: center;
+          color: #3897f0;
+          margin-left: auto;
+          padding: 8.5px 0px;
+        }
+      }
+    }
+  }
+  #main-right-aboutInstagram {
+    width: 293px;
+    height: 106px;
+    padding: 0px 0px 38px;
+    background-color: rgb(250, 250, 250);
+    #main-right-aboutInstagram-list {
+      width: 293px;
+      height: 39px;
+      margin: 0px 0px 16px;
+      padding: 0;
+      list-style: none;
+      .aboutInstagram-list-items {
+        display: inline;
+        color: #c7c7c7;
+        font-size: 11px;
+        margin: 0;
+        padding: 0;
+        word-break: keep-all;
+        &::after {
+          content: ' · ';
+          font-weight: bold;
+          margin: 0px;
+        }
+      }
+      .aboutInstagram-list-items:last-child::after {
+        content: none;
+        margin: 0;
+      }
+    }
+    #copyright {
+      color: #c7c7c7;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 13px;
+    }
+  }
+}

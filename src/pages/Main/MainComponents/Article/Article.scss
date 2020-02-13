@@ -1,0 +1,182 @@
+.Article {
+  border: 1px solid #efefef;
+  background-color: #ffffff;
+  width: 614px;
+  header {
+    width: 614px;
+    height: 60px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+    .id-dots-container {
+      width: 534px;
+      height: 18px;
+      margin: 0px 0px 0px 16px;
+      display: flex;
+      .id {
+        width: 82.39px;
+        height: 17px;
+        margin-right: auto;
+      }
+      .dots {
+        margin-left: auto;
+        width: 24px;
+        height: 17px;
+        text-align: center;
+        position: relative;
+        img {
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          left: 50%;
+          margin-left: -8px;
+          top: 50%;
+          margin-top: -8px;
+        }
+      }
+    }
+  }
+  .feed-img {
+    width: 612px;
+    img {
+      width: 100%;
+    }
+  }
+  .feed-bottom {
+    .buttons-container {
+      width: 612px;
+      height: 40px;
+      margin: 4px 0px 0px 0px;
+      padding: 0px 16px;
+      display: flex;
+      align-items: center;
+      .feed-button-left-container {
+        margin-right: auto;
+        margin-left: -8px;
+        display: flex;
+        .feed-button-left {
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          position: relative;
+          .feed-button-icon {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 50%;
+            margin-left: -12px;
+            top: 50%;
+            margin-top: -12px;
+          }
+        }
+      }
+      .feed-button-right {
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: -8px;
+        align-items: center;
+        vertical-align: middle;
+        position: relative;
+        .feed-save-button {
+          width: 22px;
+          padding-left: 2px;
+        }
+      }
+    }
+    .likes-count {
+      height: 17.78px;
+      margin: 0px 0px 8px 0px;
+      padding: 0px 16px;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 700;
+    }
+    .feed-content {
+      width: 614px;
+      height: 54px;
+      padding: 0px 16px;
+      font-size: 14px;
+      line-height: 18px;
+      .id {
+        font-weight: 800;
+        margin-right: 5px;
+      }
+    }
+    .see-comments {
+      margin: 2px 0;
+      font-size: 14px;
+      color: #999999;
+      padding: 0 16px;
+    }
+    .comments-container {
+      .comment {
+        margin-bottom: 2px;
+        margin: 1px 16px;
+        .id {
+          font-weight: 800;
+          margin-right: 5px;
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .comment-content {
+          font-size: 14px;
+        }
+      }
+    }
+    .upload-time {
+      width: 614px;
+      height: 19px;
+      padding: 0px 0px 0px 16px;
+      margin: 0px 0px 4px 0px;
+      font-size: 10px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      color: #999;
+    }
+    .comment-input-container {
+      width: 614px;
+      height: 56px;
+      padding: 19.5px 16px;
+      margin: 4px 0px 0px;
+      border-top: 1px solid #efefef;
+      display: flex;
+      #comment-input {
+        width: 550px;
+        height: 17px;
+        margin: 0px;
+        padding: 0px;
+        line-height: 18px;
+        font-size: 14px;
+        color: #262626;
+        border: 0;
+        resize: none;
+        &:hover {
+          outline: 0px !important;
+          box-shadow: none;
+          border: none;
+        }
+      }
+      #comment-submmit-button {
+        width: 24.24px;
+        height: 17.78px;
+        font-weight: 600;
+        font-size: 14px;
+        margin-left: 10px;
+        color: #3897f0;
+        border-style: none;
+        text-align: center;
+        padding: 0;
+        opacity: 0.3;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
