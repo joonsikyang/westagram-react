@@ -143,6 +143,12 @@
           outline: none;
         }
       }
+      .submitNotYet {
+        opacity: 0.3;
+      }
+      .submitReady {
+        opacity: 1;
+      }
     }
   }
 }

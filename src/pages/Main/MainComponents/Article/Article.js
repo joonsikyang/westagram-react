@@ -20,7 +20,7 @@ export class Article extends Component {
         commentData.push(
             {
                 id: commentData.length + 4,
-                userID: "user" + commentData.length,
+                userID: "user" + (commentData.length + 1),
                 comment: this.state.textVal
             }
         );
@@ -102,9 +102,8 @@ export class Article extends Component {
                         >
                     </textarea>
                     <button 
-                        type="submit"
+                        className={this.state.textVal.length > 0 ? "submitReady" : "submitNotYet"}
                         onClick={this.handleSubmit}
-                        style={{opacity: this.state.textVal.length > 0 ? 1 : 0.3}}
                     >
                         게시
                     </button>
