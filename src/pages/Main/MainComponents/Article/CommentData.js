@@ -17,4 +17,4 @@ const commentData = [
     }
 ]
 
-export default commentData
+export default commentData;

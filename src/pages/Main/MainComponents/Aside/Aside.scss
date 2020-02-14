@@ -125,6 +125,27 @@
     background-color: #ffffff;
     border-color: #efefef;
     border: 1px solid rgb(230, 230, 230);
+    .main-right-box-top {
+      margin: 12px 0px 0px;
+      padding: 4px 16px;
+      width: 291px;
+      height: 19px;
+      display: flex;
+      .main-right-box-title {
+        margin-right: auto;
+        color: #999999;
+        font-size: 14px;
+        line-height: 18px;
+        margin: -3px 0 -4px;
+        font-weight: 500;
+      }
+      .main-right-box-seeAll {
+        margin-left: auto;
+        color: #262626;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
     .main-right-recommendation-item {
       display: flex;
       width: 275.02px;
